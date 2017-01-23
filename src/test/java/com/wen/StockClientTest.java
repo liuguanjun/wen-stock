@@ -23,14 +23,9 @@ public class StockClientTest {
 
 	public static void main(String[] args) throws HttpException, IOException {
 		
-		String api_key = ""; // OKCoin申请的apiKey
-		String secret_key = ""; // OKCoin
-																// 申请的secret_key
-		String url_prex = ""; // 注意：请求URL
-													// 国际站https://www.okcoin.com
-													// ;
-													// 国内站https://www.okcoin.cn
-
+	    String api_key = "78417382-71cd-4984-be8e-4d0fc147972b";  //OKCoin申请的apiKey
+       	String secret_key = "95DB92B5B6BEC35290015EFD632E6833";  //OKCoin 申请的secret_key
+ 	    String url_prex = "https://www.okcoin.cn";  //注意：请求URL 国际站https://www.okcoin.com ; 国内站https://www.okcoin.cn
 		/**
 		 * get请求无需发送身份认证,通常用于获取行情，市场深度等公共信息
 		 * 
