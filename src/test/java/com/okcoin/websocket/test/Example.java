@@ -17,11 +17,11 @@ public class Example {
 		// secretKey为用户申请的secretKey
 		String secretKey = "XXXXX";
 
-		apiKey = "dfbb23da-5cac-4bec-b4ce-ed828f8a5458";
-		secretKey = "B0FA4F10E14364A0C7562DDFBBFD432C";
+		apiKey = "";
+		secretKey = "";
 
 		// 国际站WebSocket地址 注意如果访问国内站 请将 real.okcoin.com 改为 real.okcoin.cn
-		String url = "wss://real.okcoin.com:10440/websocket/okcoinapi";
+		String url = "wss://real.okcoin.cn:10440/websocket/okcoinapi";
 
 		// 订阅消息处理类,用于处理WebSocket服务返回的消息
 		WebSocketService service = new BuissnesWebSocketServiceImpl();
@@ -33,7 +33,7 @@ public class Example {
 		client.start();
 
 		// 添加订阅
-		client.addChannel("ok_sub_spotusd_btc_ticker");
+		client.addChannel("ok_sub_spotcny_btc_ticker");
 
 		// 删除定订阅
 		// client.removeChannel("ok_sub_spotusd_btc_ticker");
@@ -58,7 +58,7 @@ public class Example {
 		// 现货取消订单
 		// client.cancelOrder(apiKey, secretKey, "btc_usd", 123L);
 
-		// 获取用户信息
-		// client.getUserInfo(apiKey,secretKey);
+		 //获取用户信息
+		 //client.getUserInfo(apiKey,secretKey);
 	}
 }
